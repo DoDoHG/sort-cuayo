@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Cuayo</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="main_area">
+        <div id="image_upload" class="panel">
+            이미지를 추가하세요.
+        </div>
+
+        <div id="ctrl_panel" class="panel">
+            <h3>정렬이 쪼아요</h3>
+            
+            <br>
+
+            <div id="image_slice">
+                <label for="slice">이미지 분할 개수</label>
+                <select id="slice">
+                    <option value="4">4</option>
+                    <option value="8">8</option>
+                    <option value="16">16</option>
+                    <option value="32">32</option>
+                </select>
+            </div>
+
+            <hr>
+
+            <div id="image_sort_algorithm">
+                <label for="algorithm">정렬 알고리즘</label>
+                <select id="algorithm">
+                    <option value="bubble_sort">버블 정렬</option>
+                    <option value="selection_sort">선택 정렬</option>
+                    <option value="insertion_sort">삽입 정렬</option>
+                    <option value="counting_sort">계수 정렬</option>
+                </select>
+            </div>
+
+            <hr>
+
+            <div id="buttons">
+                <button>초기화</button>
+                <button id="sort_start">정렬 시작</button>
+            </div>
+            
+        </div>    
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
