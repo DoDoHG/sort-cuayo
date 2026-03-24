@@ -14,13 +14,13 @@
         </div>
 
         <div id="ctrl_panel" class="panel">
-            <h3>정렬이 쪼아요</h3>
+            <h2>정렬이 쪼아요</h2>
             
             <br>
 
             <div id="image_slice">
                 <label for="slice">이미지 분할 개수</label>
-                <select id="slice">
+                <select id="slice" class="select">
                     <option value="4">4</option>
                     <option value="8">8</option>
                     <option value="16">16</option>
@@ -32,7 +32,7 @@
 
             <div id="image_sort_algorithm">
                 <label for="algorithm">정렬 알고리즘</label>
-                <select id="algorithm">
+                <select id="algorithm" class="select">
                     <option value="bubble_sort">버블 정렬</option>
                     <option value="selection_sort">선택 정렬</option>
                     <option value="insertion_sort">삽입 정렬</option>
@@ -43,8 +43,8 @@
             <hr>
 
             <div id="buttons">
-                <button>초기화</button>
-                <button id="sort_start">정렬 시작</button>
+                <button class="ctrl_btn">초기화</button>
+                <button id="sort_start" class="ctrl_btn">정렬 시작</button>
             </div>
             
         </div>    

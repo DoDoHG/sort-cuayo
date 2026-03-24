@@ -11,7 +11,7 @@ html, body {
 }
 
 .panel {
-    background-color: #eee;
+    background-color: #efefef;
     border-radius: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -26,15 +26,62 @@ html, body {
 }
 
 #ctrl_panel {
+    
     margin-left: 5px;
     margin-right: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
 }
 
-h3 {
+h2 {
     text-align: center;
-
 }
 
 hr {
     border: 2px solid #dadada;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+
+    width: 90%;
+    height: 30px;
+    margin: 10px auto;
+    font-size: 14px;
+    font-weight: 600;
+
+    border-color: #dadada;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+option {
+    font-size: 14px;
+}
+
+/* #buttons {
+    display: flex;
+    align-items: center;
+} */
+
+.ctrl_btn {
+    display: block;
+    margin: 10px auto;
+
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 10px;
+    background-color: #dadada;
+}
+
+.ctrl_btn:hover {
+    background-color: #66dd66;
+    cursor: pointer;
 }
