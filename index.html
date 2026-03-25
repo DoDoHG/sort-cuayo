@@ -10,13 +10,13 @@
 <body>
     <div id="main_area">
         <div id="image_upload" class="panel">
-            이미지를 추가하세요.
+            이미지를 드래그 하거나 클릭해서 업로드 하세요.
         </div>
 
         <div id="ctrl_panel" class="panel">
             <h2>정렬이 쪼아요</h2>
             
-            <br>
+            <br/>
 
             <div id="image_slice">
                 <label for="slice">이미지 분할 개수</label>
@@ -25,10 +25,13 @@
                     <option value="8">8</option>
                     <option value="16">16</option>
                     <option value="32">32</option>
+                    <option value="64">64</option>
+                    <option value="128" id="high">128</option>
+                    <option value="256" id="high">256</option>
                 </select>
             </div>
 
-            <hr>
+            <hr/>
 
             <div id="image_sort_algorithm">
                 <label for="algorithm">정렬 알고리즘</label>
@@ -37,16 +40,37 @@
                     <option value="selection_sort">선택 정렬</option>
                     <option value="insertion_sort">삽입 정렬</option>
                     <option value="counting_sort">계수 정렬</option>
+                    <option value="bogo_sort" class="inefficient">보고 정렬</option>
+                    <option value="stalin_sort" class="inefficient">스탈린 정렬</option>
                 </select>
             </div>
 
-            <hr>
+            <hr/>
 
             <div id="buttons">
                 <button class="ctrl_btn">초기화</button>
                 <button id="sort_start" class="ctrl_btn">정렬 시작</button>
+                <button id="sort_stop" class="ctrl_btn">정렬 중단</button>
             </div>
+
+            <hr/>
             
+            <div class="status_panel">
+                <span class="state">상태:</span>
+                <data id="sort_state" value="idle">대기중</data>
+
+                <br/>
+                <br/>
+
+                <span class="state">소요 시간:</span>
+                <data id="sort_time" value="0">0</data>s
+                <br/>
+                <span class="state">비교 횟수:</span>
+                <data id="sort_comp" value="0">0</data>회
+                <br/>
+                <span class="state">교환 횟수:</span>
+                <data id="sort_swap" value="0">0</data>회
+            </div>
         </div>    
     </div>
     
