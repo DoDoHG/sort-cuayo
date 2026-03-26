@@ -81,7 +81,7 @@ option {
 
 .inefficient {
     background-color: #cc4444;
-    color: #dadada;
+    color: #efefef;
 }
 
 /* #buttons {
@@ -112,8 +112,25 @@ option {
     background-color: #44bb44;
 }
 
+#sort_start {
+    display: block;
+}
+
+#sort_stop {
+    display: none;
+}
+
+#sort_stop:hover {
+    background-color: #cc4444;
+    color: #efefef;
+}
+
+#sort_stop:active {
+    background-color: #aa2222;
+}
+
 #sort_state {
-    color: #cc2222
+    color: #cc4444;
 }
 
 .state {
